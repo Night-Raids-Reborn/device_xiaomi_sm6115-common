@@ -712,6 +712,10 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
