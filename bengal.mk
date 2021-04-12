@@ -889,9 +889,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.telephony.iwlan_operation_mode=legacy
-
 # Time-services
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.timed.enable=true
