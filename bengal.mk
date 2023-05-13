@@ -324,9 +324,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=verify \
-    pm.dexopt.install=speed-profile \
     dalvik.vm.image-dex2oat-filter=speed \
     dalvik.vm.image-dex2oat-threads=8 \
     dalvik.vm.dex2oat-filter=speed \
