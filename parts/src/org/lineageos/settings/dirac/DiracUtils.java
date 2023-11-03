@@ -18,7 +18,6 @@ package org.lineageos.settings.dirac;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.UserHandle;
 import android.os.SystemClock;
@@ -27,7 +26,6 @@ import android.media.AudioManager;
 import android.media.session.MediaController;
 import android.media.session.MediaSessionManager;
 import android.media.session.PlaybackState;
-import android.preference.PreferenceManager;
 import java.util.List;
 
 public class DiracUtils {
@@ -42,11 +40,6 @@ public class DiracUtils {
         mContext = context;
         mMediaSessionManager = (MediaSessionManager) context.getSystemService(Context.MEDIA_SESSION_SERVICE);
         mDiracSound = new DiracSound(0, 0);
-
-        // Restore selected scene
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String scene = sharedPrefs.getString(DiracSettingsFragment.PREF_SCENE, "4" /* smart */);
-        setScenario(Integer.parseInt(scene));
     }
 
     public static synchronized DiracUtils getInstance(Context context) {
