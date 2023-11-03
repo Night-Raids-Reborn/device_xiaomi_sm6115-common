@@ -24,6 +24,7 @@ import android.content.IntentFilter;
 import android.util.Log;
 
 import org.lineageos.settings.dirac.DiracUtils;
+import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
@@ -46,5 +47,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
         RefreshUtils.initialize(context);
         ThermalUtils.initialize(context);
+
+        // Pocket
+        PocketService.startService(context);
     }
 }
