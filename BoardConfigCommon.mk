@@ -200,5 +200,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
