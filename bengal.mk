@@ -31,6 +31,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     arm64.memtag.process.system_server=off
 
+# Adb
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.usb.config=mtp,adb
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
