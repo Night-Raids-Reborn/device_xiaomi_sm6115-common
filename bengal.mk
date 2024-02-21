@@ -977,7 +977,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true \
     ro.hwui.hardware.skiaglthreaded=true \
-    ro.hwui.use_skiaglthreaded=true
+    ro.hwui.use_skiaglthreaded=true \
+    persist.log.tag.OpenGLRenderer=S
 
 # USB
 PRODUCT_PACKAGES += \
