@@ -48,29 +48,18 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.3-impl \
-
-PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.default \
     audio.r_submix.default \
-    audio.usb.default
-
-PRODUCT_PACKAGES += \
+    audio.primary.bengal \
+    audio.primary.default \
+    audio.usb.default \
     libaudio-resampler \
-    libaudiopreprocessing \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
-    libtinycompress \
-    libvisualizer
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
