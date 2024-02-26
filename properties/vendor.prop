@@ -1,10 +1,9 @@
-#Audio
+# Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
-af.fast_track_multiplier=1
-persist.audio.fluence.speaker=false
-persist.audio.fluence.voicecall=false
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
@@ -20,11 +19,9 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
-persist.vendor.bt.aac_frm_ctl.enabled=true
-ro.qc.sdk.audio.fluencetype=fluence
-ro.qc.sdk.audio.ssr=false
+ro.vendor.audio.misound.bluetooth.enable=true
 ro.vendor.audio.scenario.support=false
-ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.sfx.earadj=true
 ro.vendor.audio.sfx.scenario=false
@@ -103,6 +100,8 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=31
 ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
 ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50
@@ -153,7 +152,6 @@ bluetooth.profile.vcp.controller.enabled?=true
 
 #Cam
 camera.disable_zsl_mode=1
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.android.apps.cameralite
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,tw.nekomimi.nekogram,org.telegram.plus
 
 # Chipset
@@ -285,3 +283,5 @@ persist.sys.oem.otg_support=true
 
 #wifi
 wifi.aware.interface=wifi-aware0
+
+### Free-Palestine ###
