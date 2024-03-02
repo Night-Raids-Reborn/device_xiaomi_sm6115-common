@@ -444,6 +444,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.hw=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
+    ro.hwui.render_ahead=20 \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_mode=9 \
     persist.sys.sf.color_saturation=1.0 \
