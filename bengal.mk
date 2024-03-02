@@ -1013,14 +1013,5 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     zygote.critical_window.minute=10
 
-#Sf Pixel 8 pro
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.late.sf.duration=10500000 \
-    debug.sf.late.app.duration=16600000 \
-    debug.sf.early.sf.duration=16600000 \
-    debug.sf.early.app.duration=16600000 \
-    debug.sf.earlyGl.sf.duration=16600000 \
-    debug.sf.earlyGl.app.duration=16600000
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm6115-common/sm6115-common-vendor.mk)
