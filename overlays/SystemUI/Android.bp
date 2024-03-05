@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SystemUIResBengal",
+    sdk_version: "current",
+    vendor: true
+}
