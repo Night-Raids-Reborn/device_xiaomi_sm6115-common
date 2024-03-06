@@ -745,6 +745,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
