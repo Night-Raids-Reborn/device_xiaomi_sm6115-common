@@ -143,6 +143,13 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := bengal
 
+# Properties
+TARGET_ODM_PROP += $(COMMON_PATH)/config/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/config/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/config/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/config/vendor.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/config/system_ext.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
