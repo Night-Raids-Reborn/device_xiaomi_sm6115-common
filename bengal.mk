@@ -432,9 +432,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.opengles.version=196610
 
 PRODUCT_VENDOR_PROPERTIES += \
-    debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
-    debug.sf.hw=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
     ro.hwui.render_ahead=20 \
@@ -479,7 +477,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true \
     ro.surface_flinger.set_touch_timer_ms=200 \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696
+    ro.surface_flinger.wcg_composition_dataspace=143261696 \
+    debug.sf.hw=1 \
+    debug.egl.hw=1
 
 # DPM
 PRODUCT_SYSTEM_PROPERTIES += \
