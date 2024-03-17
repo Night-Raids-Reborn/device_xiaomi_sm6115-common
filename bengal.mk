@@ -196,7 +196,13 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio_hal.period_multiplier=3 \
     vendor.audio_hal.period_size=192 \
     vendor.voice.path.for.pcm.voip=true \
-    ro.audio.spatializer_enabled=true
+    ro.audio.spatializer_enabled=true \
+    ro.audio.spatializer_transaural_enabled_default=false \
+    persist.vendor.audio.spatializer.speaker_enabled=true \
+    ro.vendor.audio.feature.spatial=7
+
+    PRODUCT_PROPERTY_OVERRIDES += \
+       audio.spatializer.effect.util_clamp_min=300
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.soundtrigger.appdefine.cnn.level=31 \
